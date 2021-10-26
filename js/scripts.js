@@ -3,4 +3,3 @@ let pokemonList = [
   {name: 'charmander', category: 'lizard', type: 'fire'},
   {name: 'wartortle', category: 'turtle', type: 'water'}
 ];
-console.log(pokemonList);
