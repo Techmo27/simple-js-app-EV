@@ -1,5 +1,5 @@
 let pokemonList = [
-  {name: 'bulbasur', category: 'seed', type: ['grass', 'poison']},
-  {name: 'charmander', category: 'lizard', type: 'fire'},
-  {name: 'wartortle', category: 'turtle', type: 'water'}
+  {name: 'bulbasur', height: 7, type: ['grass', 'poison']},
+  {name: 'charmander', height: 5, type: 'fire'},
+  {name: 'wartortle', height: 3, type: 'water'}
 ];
