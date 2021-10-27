@@ -10,8 +10,8 @@ let pokemonList = [
 for (let i = 0; i < pokemonList.length; i++){
   // If-else statement
   if (pokemonList[i].height > 3) {
-      document.write("<p>" + pokemonList[i].name + "Height:" + pokemonList[i].height + "- Wow that's tall!<p>");
+      document.write("<p>" + pokemonList[i].name + " " + "Height:" + " " + pokemonList[i].height + " " + "- Wow that's tall!<p>");
   }else{
-      document.write("<p>" + pokemonList[i].name + "Height:" + pokemonList[i].height + "<p>");
+      document.write("<p>" + pokemonList[i].name + " " + "Height:" + " " + pokemonList[i].height + "<p>");
   }
 }
