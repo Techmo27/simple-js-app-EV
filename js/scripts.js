@@ -5,7 +5,8 @@ let pokemonList = [
 ];
 
 
-
-for (let i = 0; i < pokemonList.length; i++){
-  document.write('<p>pokemonList[i].name + pokemonList[i].height + pokemonList[i].type</p>')
+let i = 0
+for (;pokemonList[i];){
+  document.write('<p>'pokemonList[i].name + ' ' + ''(height:' + pokemonList[i].height ')</p>');
+  i++;
 }
