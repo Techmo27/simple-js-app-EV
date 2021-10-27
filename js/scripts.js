@@ -1,12 +1,13 @@
+//Array of Pokémons and their data
 let pokemonList = [
-  {name: 'bulbasur', height: 7, type: ['grass', 'poison']},
-  {name: 'charmander', height: 5, type: 'fire'},
-  {name: 'wartortle', height: 3, type: 'water'}
+  {name: 'Bulbasur', height: 7, type: ['grass', 'poison']},
+  {name: 'Charmander', height: 5, type: 'fire'},
+  {name: 'Wartortle', height: 3, type: 'water'}
 ];
 
 
-let i = 0
-for (;pokemonList[i];){
-  document.write('<p>'pokemonList[i].name + ' ' + 'height:' + pokemonList[i].height'</p>');
-  i++;
+
+for (let i = 0 ;pokemonList[i]; i++){
+  document.write(pokemonList[i].name + '' + 'height:' + pokemonList[i].height);
+
 }
