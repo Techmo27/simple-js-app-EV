@@ -1,14 +1,17 @@
-//Array of Pokémons and their data
+//Array of Pokémons
 let pokemonList = [
-  {name: 'Bulbasur', height: 7, type: ['grass', 'poison']},
-  {name: 'Charmander', height: 5, type: 'fire'},
-  {name: 'Wartortle', height: 3, type: 'water'}
+  {name: 'Bulbasur', height: 2.04, type: ['grass', 'poison']},
+  {name: 'Charmander', height: 2, type: 'fire'},
+  {name: 'Wartortle', height: 3.03, type: 'water'}
 ];
 
 
-
+// Loop through Pokémons
 for (let i = 0; i < pokemonList[i].length; i++){
-  document.write("<p>")
-  document.write(pokemonList[i].name + " " + "Height:" + pokemonList[i].height + " ");
-  document.write("</p>")
+  // If-else statement
+  if (pokemonList[i].height > 3) {
+      document.write("<p>" + pokemonList[i].name + "Height:" + pokemonList[i].height + "- Wow that's tall!<p>");
+  }else{
+      document.write("<p>" + pokemonList[i].name + "Height:" + pokemonList[i].height + "<p>");
+  }
 }
