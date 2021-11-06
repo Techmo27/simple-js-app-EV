@@ -19,7 +19,7 @@ for (let i = 0; i < pokemonList.length; i++){
 // looping through list of Pokémons
 pokemonList.forEach(function(pokemon)) {
   // If-else statement
-  if (pokemonList.height > 3) {
+  if (pokemon.height > 3) {
       document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + " " + "- Wow that's tall!<p>");
   }else{
       document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + "<p>");
