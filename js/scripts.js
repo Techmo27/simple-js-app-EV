@@ -19,8 +19,8 @@ let pokemonRepository = (function () {
     }
   ];
 
-  function add(item)   {
-    pokemonList.push(item);
+  function add(pokemon)   {
+    pokemonList.push(pokemon);
   }
 
   function getALL() {
@@ -39,7 +39,7 @@ pokemonRepository.add(item);
 
 
 // looping through list of Pokémons
-pokemonList.forEach(function(pokemon) {
+pokemonRepository.getAll().forEach(function(pokemon) {
   // If-else statement to highlight Pokémons that are bigger than 3
   if (pokemon.height > 3) {
       document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + " " + "- Wow that's tall!<p>");
