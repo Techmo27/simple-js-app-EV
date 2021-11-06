@@ -6,12 +6,22 @@ let pokemonList = [
 ];
 
 
-// Loop through Pokémons
+/* // Loop through Pokémons
 for (let i = 0; i < pokemonList.length; i++){
   // If-else statement
   if (pokemonList[i].height > 3) {
       document.write("<p>" + pokemonList[i].name + " " + "Height:" + " " + pokemonList[i].height + " " + "- Wow that's tall!<p>");
   }else{
       document.write("<p>" + pokemonList[i].name + " " + "Height:" + " " + pokemonList[i].height + "<p>");
+  }
+} */
+
+// looping through list of Pokémons
+pokemonList.forEach(function(pokemon)) {
+  // If-else statement
+  if (pokemonList.height > 3) {
+      document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + " " + "- Wow that's tall!<p>");
+  }else{
+      document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + "<p>");
   }
 }
