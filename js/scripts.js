@@ -24,4 +24,8 @@ pokemonList.forEach(function(pokemon)) {
   }else{
       document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + "<p>");
   }
-}
+});
+
+/*userList.forEach(function(user) {
+  console.log(user.name + ' is ' + user.age + ' years old.');
+});*/
