@@ -34,22 +34,13 @@ let pokemonRepository = (function () {
 
 })();
 
+
+// looping through list of Pokémons
 pokemonRepository.getAll().forEach(function(pokemon) {
   // If-else statement to highlight Pokémons that are bigger than 3
   if (pokemon.height > 3) {
       document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + " " + "- Wow that's tall!<p>");
   }else{
       document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + "<p>");
-
   }
-
-
-/* // looping through list of Pokémons
-pokemonList.forEach(function(pokemon) {
-  // If-else statement to highlight Pokémons that are bigger than 3
-  if (pokemon.height > 3) {
-      document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + " " + "- Wow that's tall!<p>");
-  }else{
-      document.write("<p>" + pokemon.name + " " + "Height:" + " " + pokemon.height + "<p>");
-  }
-}); */
+});
