@@ -59,5 +59,5 @@ pokemonRepository.getALL().forEach(function (item) {
 }); */
 
 pokemonRepository.getALL().forEach(function (item) {
-  pokemonRepository.addListItem(pokemon);
+  pokemonRepository.addListItem(item);
 });
