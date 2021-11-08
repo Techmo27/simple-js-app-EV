@@ -34,11 +34,11 @@ let pokemonRepository = (function () {
 
 })();
 
-console.log(pokemonRepository.getAll());
+console.log(pokemonRepository.getALL());
 
 
 // looping through list of Pokémons
-pokemonRepository.getAll().forEach(function (item) {
+pokemonRepository.getALL().forEach(function (item) {
   // If-else statement to highlight Pokémons that are bigger than 3
   if (item.height > 3) {
       document.write("<p>" + item.name + " " + "Height:" + " " + item.height + " " + "- Wow that's tall!<p>");
