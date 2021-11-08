@@ -4,7 +4,7 @@ font-family: 'Raleway', sans-serif;*/
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -42,4 +42,30 @@ h3 {
 .pokemon-button:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+ul.pokemon-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.poke-grid {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .poke-grid {
+    max-width: 100%;
+    margin: 15px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .poke-grid {
+    max-width: 100%;
+    margin: 15px;
+  }
 }
