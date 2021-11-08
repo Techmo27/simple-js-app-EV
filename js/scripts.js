@@ -36,7 +36,7 @@ let pokemonRepository = (function () {
 
 console.log(pokemonRepository.getALL());
 
-
+/* This is my solution to exercise 1.5
 // looping through list of Pokémons
 pokemonRepository.getALL().forEach(function (item) {
   // If-else statement to highlight Pokémons that are bigger than 3
@@ -45,4 +45,14 @@ pokemonRepository.getALL().forEach(function (item) {
   }else{
       document.write("<p>" + item.name + " " + "Height:" + " " + item.height + "<p>");
   }
+}); */
+
+pokemonRepository.getALL().forEach(function (item) {
+  let pokemonTable = document.querySelector('.pokemon-list');
+  let pokemonItem = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = 'item.name';
+  button.classList.add('pokemon-button');
+  pokemonItem.appendChild(button);
+  pokemonTable.appendChild(pokemonItem);
 });
