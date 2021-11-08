@@ -25,3 +25,21 @@ h3 {
   font-size: 18px;
   font-weight: 800;
 }
+
+.pokemon-button {
+  border: none;
+  font-family: inherit;
+  background-color: #f8f8ff;
+  color: #0d0d0d;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.5s opacity;
+}
+
+.pokemon-button:hover,
+.pokemon-button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
