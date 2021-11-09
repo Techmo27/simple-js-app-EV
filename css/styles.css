@@ -68,6 +68,10 @@ ul.pokemon-list {
   margin: 0 auto;
 }
 
+.svg-icon {
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
