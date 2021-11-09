@@ -55,7 +55,6 @@ ul.pokemon-list {
 .poke-grid {
   max-width: 500px;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
