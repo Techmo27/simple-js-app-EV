@@ -27,6 +27,7 @@ h3 {
 }
 
 .pokemon-button {
+  width: 100%;
   border: none;
   font-family: inherit;
   background-color: #f8f8ff;
