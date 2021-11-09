@@ -26,6 +26,10 @@ h3 {
   font-weight: 800;
 }
 
+.page-header__item--logo {
+  width: 200px;
+}
+
 .pokemon-button {
   width: 100%;
   border: none;
