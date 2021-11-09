@@ -68,6 +68,10 @@ ul.pokemon-list {
   margin: 0 auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .poke-grid {
     max-width: 100%;
@@ -80,4 +84,26 @@ ul.pokemon-list {
     max-width: 100%;
     margin: 15px;
   }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #000;
+  }
+
+  50% {
+    fill: #0ff;
+  }
+
+  100% {
+    fill: #8a2be2;
+  }
+}
+
+.gotcha {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
