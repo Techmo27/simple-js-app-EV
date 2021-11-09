@@ -30,9 +30,7 @@ h3 {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-style: solid;
-  border-bottom: 5px;
-  border-color: #f8f8ff;
+  border-bottom: 2px solid #f8f8ff;
 }
 
 .page-header__item--logo {
