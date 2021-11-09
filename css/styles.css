@@ -101,7 +101,6 @@ ul.pokemon-list {
 }
 
 .gotcha {
-  text-align: center;
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
