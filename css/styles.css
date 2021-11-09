@@ -35,8 +35,7 @@ h3 {
 
 .page-header__item--logo {
   width: 150px;
-  flex-direction: row;
-  text-align: right;
+  flex-direction: row-reverse;
 }
 
 .pokemon-button {
