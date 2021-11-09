@@ -34,8 +34,9 @@ h3 {
 }
 
 .page-header__item--logo {
-  width: 150px;
+  display: inline-block;
   text-align: right;
+  width: 10%;
 }
 
 .pokemon-button {
