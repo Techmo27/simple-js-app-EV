@@ -35,13 +35,13 @@ h3 {
   padding: 10px;
   margin: 2px;
   border-radius: 3px;
-  transition: 0.5s opacity;
+  transition: 0.5s background-color;
 }
 
 .pokemon-button:hover,
 .pokemon-button:focus {
   cursor: pointer;
-  opacity: 0.8;
+  background-color: #f0ffff;
 }
 
 ul.pokemon-list {
