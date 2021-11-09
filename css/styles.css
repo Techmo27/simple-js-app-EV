@@ -31,11 +31,12 @@ h3 {
   width: 100%;
   padding: 15px;
   background-color: #f8f8ff;
-  text-align: right;
 }
 
 .page-header__item--logo {
-  width: 150px;
+  display: inline-block;
+  text-align: right;
+  width: 10%;
 }
 
 .pokemon-button {
