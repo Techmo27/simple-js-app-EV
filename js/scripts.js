@@ -1,23 +1,8 @@
 
 let pokemonRepository = (function () {
 
-  let pokemonList = [
-    {
-      name: 'Bulbasur',
-      height: 2.04,
-      type: ['grass', 'poison']
-    },
-    {
-      name: 'Charmander',
-      height: 2,
-      type: 'fire'
-    },
-    {
-      name: 'Wartortle',
-      height: 3.03,
-      type: 'water'
-    }
-  ];
+  let pokemonList = [];
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   function add(pokemon) {
     pokemonList.push(pokemon);
@@ -36,35 +21,57 @@ let pokemonRepository = (function () {
     pokemonTable.appendChild(pokemonItem);
   }
 
-  function showDetails(item) {
-    console.log (item);
+  function showDetails(pokemon) {
+    loadDetails(pokemon).then(function () {
+      console.log(pokemon);
+    });
   }
 
   function getALL() {
     return pokemonList;
   }
 
+  function loadList() {
+    return fetch(apiUrl).then(function (response) {
+      return response.json();
+    }).then(function (json) {
+      json.results.forEach(function (item) {
+        let pokemon = {
+          name: item.name,
+          detailsUrl: item.url
+        };
+        add(pokemon);
+      });
+    }).catch(function (e) {
+      console.error(e);
+    })
+  }
+
+  function loadDetails(item) {
+    let url = item.detailsUrl;
+    return fetch(url).then(function (response) {
+      return response.json();
+    }).then(function (details) {
+      // Now we add the details to the item
+      item.imageUrl = details.sprites.front_default;
+      item.height = details.height;
+      item.types = details.types;
+    }).catch(function (e) {
+      console.error(e);
+    });
+  }
+
   return {
     add: add,
     getALL: getALL,
-    addListItem: addListItem,
+    loadList: loadList,
+    loadDetails: loadDetails
   };
 
 })();
 
-console.log(pokemonRepository.getALL());
-
-/* This is my solution to exercise 1.5
-// looping through list of Pokémons
-pokemonRepository.getALL().forEach(function (item) {
-  // If-else statement to highlight Pokémons that are bigger than 3
-  if (item.height > 3) {
-      document.write("<p>" + item.name + " " + "Height:" + " " + item.height + " " + "- Wow that's tall!<p>");
-  }else{
-      document.write("<p>" + item.name + " " + "Height:" + " " + item.height + "<p>");
-  }
-}); */
-
-pokemonRepository.getALL().forEach(function (item) {
-  pokemonRepository.addListItem(item);
+pokemonRepository.loadList().then(function() {
+  pokemonRepository.getAll().forEach(function(pokemon){
+    pokemonRepository.addListItem(pokemon);
+  });
 });
