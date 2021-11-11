@@ -6,7 +6,8 @@ let pokemonRepository = (function () {
 
   function add(pokemon) {
     if (
-      typeof pokemon === 'object' && 'name' in pokemon
+      typeof pokemon === 'object' &&
+      'name' in pokemon
       ) {
         pokemonList.push(pokemon);
       } else {
@@ -14,21 +15,21 @@ let pokemonRepository = (function () {
       }
   }
 
-  function addListItem(item) {
-    let pokemonTable = document.querySelector('.pokemon-list');
-    let pokemonItem = document.createElement('li');
-    let button = document.createElement('button');
-    button.innerText = item.name;
-    button.classList.add('pokemon-button');
-    button.addEventListener('click', function(event) {
-      showDetails(item);
-    });
-    pokemonItem.appendChild(button);
-    pokemonTable.appendChild(pokemonItem);
-  }
-
   function getAll() {
     return pokemonList;
+  }
+
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector('.pokemon-list');
+    let pokemonItem = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = pokemon.name;
+    button.classList.add('pokemon-button');
+    button.addEventListener('click', function(event) {
+      showDetails(pokemon);
+    });
+    pokemonItem.appendChild(button);
+    pokemonList.appendChild(pokemonItem);
   }
 
   function loadList() {
@@ -52,7 +53,6 @@ let pokemonRepository = (function () {
     return fetch(url).then(function (response) {
       return response.json();
     }).then(function (details) {
-      // Now we add the details to the item
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
       item.types = details.types;
@@ -61,9 +61,9 @@ let pokemonRepository = (function () {
     });
   }
 
-  function showDetails(pokemon) {
-    loadDetails(pokemon).then(function () {
-      console.log(pokemon);
+  function showDetails(item) {
+    pokemonRepository.loadDetails(item).then(function () {
+      console.log(item);
     });
   }
 
@@ -72,7 +72,8 @@ let pokemonRepository = (function () {
     getAll: getAll,
     addListItem: addListItem,
     loadList: loadList,
-    loadDetails: loadDetails
+    loadDetails: loadDetails,
+    showDetails: showDetails
   };
 
 })();
