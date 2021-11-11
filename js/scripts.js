@@ -27,12 +27,6 @@ let pokemonRepository = (function () {
     pokemonTable.appendChild(pokemonItem);
   }
 
-  function showDetails(pokemon) {
-    loadDetails(pokemon).then(function () {
-      console.log(pokemon);
-    });
-  }
-
   function getAll() {
     return pokemonList;
   }
@@ -64,6 +58,12 @@ let pokemonRepository = (function () {
       item.types = details.types;
     }).catch(function (e) {
       console.error(e);
+    });
+  }
+
+  function showDetails(pokemon) {
+    loadDetails(pokemon).then(function () {
+      console.log(pokemon);
     });
   }
 
