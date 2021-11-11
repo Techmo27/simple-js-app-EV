@@ -27,7 +27,7 @@ let pokemonRepository = (function () {
     });
   }
 
-  function getALL() {
+  function getAll() {
     return pokemonList;
   }
 
@@ -63,7 +63,7 @@ let pokemonRepository = (function () {
 
   return {
     add: add,
-    getALL: getALL,
+    getAll: getAll,
     loadList: loadList,
     loadDetails: loadDetails
   };
