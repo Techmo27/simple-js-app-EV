@@ -83,7 +83,7 @@ validating that it's an object and has a name*/
     //adds new modal content
     let closeButtonElement = document.createElement('button');
     closeButtonElement.classList.add('modal-close');
-    closeButtonElement.innerText = 'Close';
+    closeButtonElement.innerText = 'x';
     closeButtonElement.addEventListener('click', hideModal);
 
     let modalTitle = document.createElement('h1');
