@@ -70,7 +70,7 @@ validating that it's an object and has a name*/
 // function that displays the fetched details on the console
   function showDetails(pokemon) {
     pokemonRepository.loadDetails(pokemon).then(function () {
-      function showModal(pokemon);
+      showModal(pokemon);
     });
   }
   let modalContainer = document.querySelector('#modal-container');
