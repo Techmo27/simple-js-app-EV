@@ -90,9 +90,9 @@ validating that it's an object and has a name*/
     modalTitle.innerText = pokemon.name;
 
     let modalContent = document.createElement ('p');
-    modalContent.innerText = 'Height:' + pokemon.height;
+    modalContent.innerText = 'Height:' + ' ' + pokemon.height;
 
-    let modalImage = document.createElement('image-container')
+    let modalImage = document.createElement('image-container');
     modalImage.src = pokemon.imageUrl;
 
     modal.appendChild(closeButtonElement);
