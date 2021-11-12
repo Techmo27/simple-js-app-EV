@@ -1,55 +1,6 @@
 
 let pokemonRepository = (function () {
 
-  let modalContainer = document.querySelector('#modal-container');
-  // function which shows content of modalContainer
-  function showModal(title, text) {
-    modalContainer.innerHTML = '';
-    // clears existing modal content
-    let modal = document.createElement('div');
-    modal.classList.add('modal');
-    //adds new modal content
-    let closeButtonElement = document.createElement('button');
-    closeButtonElement.classList.add('modal-close');
-    closeButtonElement.innerText = 'Close';
-    closeButtonElement.addEventListener('click', hideModal);
-
-    let titleElement = document.createElement('h1');
-    titleElement.innerText = title;
-
-    let contentElement = document.createElement ('p');
-    contentElement.innerText = text;
-
-    modal.appendChild(closeButtonElement);
-    modal.appendChild(titleElement);
-    modal.appendChild(contentElement);
-    modalContainer.appendChild(modal);
-
-    modalContainer.classList.add('is-visible');
-  }
-  // function that removes the modal
-  function hideModal() {
-    modalContainer.classList.remove('is-visible');
-  }
-  // closes the modal when esc is pressed
-  window.addEventListener('keydown', (e) => {
-  let modalContainer = document.querySelector('#modal-container');
-  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-    hideModal();
-    }
-  });
-
-  modalContainer.addEventListener('click', (e) => {
-  let target = e.target;
-  if (target === modalContainer) {
-    hideModal();
-    }
-  });
-
-  document.querySelector('#show-modal').addEventListener('click', () => {
-    showModal('Modal title', 'This is the modal content!');
-  });
-
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
@@ -122,6 +73,51 @@ validating that it's an object and has a name*/
       console.log(item);
     });
   }
+  let modalContainer = document.querySelector('#modal-container');
+  // function which shows content of modalContainer
+  function showModal(title, text) {
+    modalContainer.innerHTML = '';
+    // clears existing modal content
+    let modal = document.createElement('div');
+    modal.classList.add('modal');
+    //adds new modal content
+    let closeButtonElement = document.createElement('button');
+    closeButtonElement.classList.add('modal-close');
+    closeButtonElement.innerText = 'Close';
+    closeButtonElement.addEventListener('click', hideModal);
+
+    let titleElement = document.createElement('h1');
+    titleElement.innerText = title;
+
+    let contentElement = document.createElement ('p');
+    contentElement.innerText = text;
+
+    modal.appendChild(closeButtonElement);
+    modal.appendChild(titleElement);
+    modal.appendChild(contentElement);
+    modalContainer.appendChild(modal);
+
+    modalContainer.classList.add('is-visible');
+  }
+  // function that removes the modal
+  function hideModal() {
+    let modalContainer = document.querySelector('#modal-container');
+    modalContainer.classList.remove('is-visible');
+  }
+  // closes the modal when esc is pressed
+  window.addEventListener('keydown', (e) => {
+  let modalContainer = document.querySelector('#modal-container');
+  if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+    hideModal();
+    }
+  });
+
+  modalContainer.addEventListener('click', (e) => {
+  let target = e.target;
+  if (target === modalContainer) {
+    hideModal();
+    }
+  });
 // functions are beaing called, so that we have access to it
   return {
     add: add,
