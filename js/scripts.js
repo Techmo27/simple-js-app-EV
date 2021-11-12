@@ -70,12 +70,12 @@ validating that it's an object and has a name*/
 // function that displays the fetched details on the console
   function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function () {
-      function showModal(pokemon);
+      function showModal(title, text);
     });
   }
   let modalContainer = document.querySelector('#modal-container');
   // function which shows content of modalContainer
-  function showModal(pokemon) {
+  function showModal(title, text) {
     modalContainer.innerHTML = '';
     // clears existing modal content
     let modal = document.createElement('div');
