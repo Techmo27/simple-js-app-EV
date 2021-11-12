@@ -68,14 +68,14 @@ validating that it's an object and has a name*/
   }
 
 // function that displays the fetched details on the console
-  function showDetails(item) {
-    pokemonRepository.loadDetails(item).then(function () {
-      function showModal(item);
+  function showDetails(pokemon) {
+    pokemonRepository.loadDetails(pokemon).then(function () {
+      function showModal(pokemon);
     });
   }
   let modalContainer = document.querySelector('#modal-container');
   // function which shows content of modalContainer
-  function showModal(title, text) {
+  function showModal(pokemon) {
     modalContainer.innerHTML = '';
     // clears existing modal content
     let modal = document.createElement('div');
@@ -86,15 +86,19 @@ validating that it's an object and has a name*/
     closeButtonElement.innerText = 'Close';
     closeButtonElement.addEventListener('click', hideModal);
 
-    let titleElement = document.createElement('h1');
-    titleElement.innerText = title;
+    let modalTitle = document.createElement('h1');
+    modalTitle.innerText = pokemon.name;
 
-    let contentElement = document.createElement ('p');
-    contentElement.innerText = text;
+    let modalImage = document.create('image-container')
+    modalImage.src = pokemon.imageUrl;
+
+    let modalContent = document.createElement ('p');
+    modalContent.innerText = 'Height:' + pokemon.height;
 
     modal.appendChild(closeButtonElement);
-    modal.appendChild(titleElement);
-    modal.appendChild(contentElement);
+    modal.appendChild(modalTitle);
+    modal.appendChild(modalImage);
+    modal.appendChild(modalContent);
     modalContainer.appendChild(modal);
 
     modalContainer.classList.add('is-visible');
