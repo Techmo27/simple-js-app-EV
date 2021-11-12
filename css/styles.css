@@ -49,7 +49,7 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0.3, 0);
+  background: rgba(0, 0, 0, 0.3);
 
   /* to show it above other content */
   z-index: 999;
@@ -79,7 +79,7 @@ h3 {
   -webkit-appearance: none;
   border: 0;
   background: none;
-  color: #777;
+  color: #333;
   text-decoration: underline;
 }
 
