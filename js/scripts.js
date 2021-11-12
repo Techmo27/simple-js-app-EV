@@ -92,7 +92,7 @@ validating that it's an object and has a name*/
     let modalContent = document.createElement ('p');
     modalContent.innerText = 'Height:' + ' ' + pokemon.height;
 
-    let modalImage = document.createElement('image-container');
+    let modalImage = document.createElement('img');
     modalImage.src = pokemon.imageUrl;
 
     modal.appendChild(closeButtonElement);
