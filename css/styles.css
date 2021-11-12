@@ -77,10 +77,9 @@ h3 {
 .modal-close {
   float: right;
   -webkit-appearance: none;
-  border: 0;
   background: none;
   color: #333;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .modal h1 {
