@@ -29,11 +29,11 @@ validating that it's an object and has a name*/
     let button = document.createElement('button');
     button.innerText = pokemon.name;
     button.classList.add('pokemon-button');
+    pokemonItem.appendChild(button);
+    pokemonList.appendChild(pokemonItem);
     button.addEventListener('click', function(event) {
       showDetails(pokemon);
     });
-    pokemonItem.appendChild(button);
-    pokemonList.appendChild(pokemonItem);
   }
 
 // promise function that fetches the pokeapi and adds pokémons to my array
@@ -69,7 +69,7 @@ validating that it's an object and has a name*/
 
 // function that displays the fetched details on the console
   function showDetails(pokemon) {
-    pokemonRepository.loadDetails(pokemon).then(function () {
+    loadDetails(pokemon).then(function () {
       showModal(pokemon);
     });
   }
