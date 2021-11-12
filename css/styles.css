@@ -26,17 +26,6 @@ h3 {
   font-weight: 800;
 }
 
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 15px;
-  background-color: #f8f8ff;
-}
-
-.page-header__item--logo {
-  width: 150px;
-}
-
 #modal-container {
   display: none;
 }
