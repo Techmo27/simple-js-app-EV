@@ -89,16 +89,16 @@ validating that it's an object and has a name*/
     let modalTitle = document.createElement('h1');
     modalTitle.innerText = pokemon.name;
 
-    let modalImage = document.create('image-container')
-    modalImage.src = pokemon.imageUrl;
-
     let modalContent = document.createElement ('p');
     modalContent.innerText = 'Height:' + pokemon.height;
 
+    let modalImage = document.createElement('image-container')
+    modalImage.src = pokemon.imageUrl;
+
     modal.appendChild(closeButtonElement);
     modal.appendChild(modalTitle);
-    modal.appendChild(modalImage);
     modal.appendChild(modalContent);
+    modal.appendChild(modalImage);
     modalContainer.appendChild(modal);
 
     modalContainer.classList.add('is-visible');
