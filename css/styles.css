@@ -12,6 +12,8 @@
 
 .pokemon-button {
   text-transform: capitalize;
+  align-items: center;
+  display: inline-block;
 }
 
 /* font-family: 'Nunito Sans', sans-serif;
