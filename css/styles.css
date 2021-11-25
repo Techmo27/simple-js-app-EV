@@ -1,11 +1,11 @@
 .pokemon-list {
-    background: linear-gradient(60deg, rgba(153,0,240,1) 0%, rgba(41,0,176,1) 50%, rgba(237,109,109,1) 100%);
+    background: linear-gradient(60deg, #9900f0 0%, #2900b0 50%, #ed6d6d 100%);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .pokemon-button {
-  width: 90px;
+  width: 170px;
   text-transform: capitalize;
 }
 
