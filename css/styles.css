@@ -1,5 +1,5 @@
 .pokemon-list {
-		background-color: #222;
+		background: linear-gradient(to bottom, blue, white);
     list-style-type: none;
     display: flex;
     flex-direction: row;
