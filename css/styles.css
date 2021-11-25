@@ -1,5 +1,5 @@
 .pokemon-list {
-    background: linear-gradient(60deg, #9900f0 0%, #2900b0 50%, #ed6d6d 100%);
+    background: linear-gradient(to bottom right, #9900f0, #2900b0, #ed6d6d);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
