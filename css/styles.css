@@ -24,6 +24,11 @@ body {
   text-align: center;
 }
 
+.navbar {
+  margin: 50px;
+  opacity: 80%;
+}
+
 
 
 /* font-family: 'Nunito Sans', sans-serif;
