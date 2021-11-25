@@ -87,9 +87,9 @@ validating that it's an object and has a name*/
 
 	let modalBody = $('.modal-body');
 	let modalTitle = $('.modal-title');
-  let modalHeader = $('.modal-header');
+
 	//clear modal of existing content
-  modalHeader.empty();
+
 	modalTitle.empty();
 	modalBody.empty();
 
