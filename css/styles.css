@@ -1,17 +1,16 @@
 .pokemon-list {
-		background: linear-gradient(to bottom, blue, white);
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-		text-align: center;
-    justify-content: center;
-    padding: 10px;
+		list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .pokemon-button {
   text-transform: capitalize;
+}
+
+.list-group-item {
+  border: none;
+  text-align: center;
 }
 
 /* font-family: 'Nunito Sans', sans-serif;
