@@ -55,11 +55,11 @@ validating that it's an object and has a name*/
 
   // DOM manipulation that creates the buttons and connects to css styling
   function addListItem(pokemon) {
-    let pokemonList = document.querySelector('.pokemon-list');
+    let pokemonList = document.querySelector('.list-group');
     let pokemonItem = document.createElement('li');
     let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add('btn', 'pokemon-button');
+    button.classList.add('btn', 'btn-primary', 'btn-lg');
     button.setAttribute('data-target', '#exampleModal');
     button.setAttribute('data-toggle', 'modal');
 
