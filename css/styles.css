@@ -1,5 +1,5 @@
 .body {
-  background: linear-gradient(to bottom right, #9900f0, #2900b0, #ed6d6d);
+  background: linear-gradient(to bottom, blue, white);
 }
 .pokemon-list {
     display: grid;
