@@ -60,9 +60,9 @@ validating that it's an object and has a name*/
   function addListItem(pokemon) {
     let pokemonList = document.querySelector('.list-group');
     let pokemonItem = document.createElement('li');
-    let button = document.createElement('button');
+    let button = document.createElement('button', 'pokemon-button');
     button.innerText = pokemon.name;
-    button.classList.add('btn', 'btn-primary', 'btn-lg');
+    button.classList.add('btn', 'btn-light', 'btn-lg');
     button.setAttribute('data-target', '#exampleModal');
     button.setAttribute('data-toggle', 'modal');
 
