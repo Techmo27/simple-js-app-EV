@@ -16,6 +16,7 @@
 .list-group-item {
   border: none;
   text-align: center;
+  background-color: none;
 }
 
 /* font-family: 'Nunito Sans', sans-serif;
