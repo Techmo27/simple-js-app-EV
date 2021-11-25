@@ -11,18 +11,11 @@
 }
 
 .pokemon-button {
-  width: 100%;
-  border: none;
-  font-family: inherit;
+  width: 10%;
   text-transform: capitalize;
-  display: inline-block;
-
 }
 
-ul.pokemon-list {
-  display: flex;
-  justify-content: center;  
-}
+
 
 
 /* font-family: 'Nunito Sans', sans-serif;
