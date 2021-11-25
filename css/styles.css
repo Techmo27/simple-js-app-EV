@@ -1,6 +1,8 @@
 /* font-family: 'Nunito Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
+
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -131,26 +133,4 @@ ul.pokemon-list {
     max-width: 100%;
     margin: 15px;
   }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #000;
-  }
-
-  50% {
-    fill: #0ff;
-  }
-
-  100% {
-    fill: #8a2be2;
-  }
-}
-
-.gotcha {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
