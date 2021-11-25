@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(90deg, rgba(153,0,240,1) 0%, rgba(41,0,176,1) 50%, rgba(237,109,109,1) 100%);
+  background: linear-gradient(60deg, #ed6d6d 0%, #2900b0 100%);
 }
 
 .pokemon-list {
@@ -10,11 +10,17 @@ body {
 .pokemon-button {
   width: 270px;
   text-transform: capitalize;
+  opacity: 80%;
 }
 
 .list-group-item {
   background-color: transparent;
   border: none;
+  text-align: center;
+}
+
+#exampleModal {
+  text-transform: capitalize;
   text-align: center;
 }
 
