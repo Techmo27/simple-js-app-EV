@@ -59,12 +59,17 @@ validating that it's an object and has a name*/
     let pokemonItem = document.createElement('li');
     let button = document.createElement('button');
     button.innerText = pokemon.name;
-    button.classList.add('pokemon-button');
-    pokemonItem.appendChild(button);
-    pokemonList.appendChild(pokemonItem);
+    button.classList.add('btn', 'pokemon-button');
+    button.setAttribute('data-target', '#exampleModal');
+    button.setAttribute('data-toggle', 'modal');
+
     button.addEventListener('click', function(event) {
       showDetails(pokemon);
     });
+    pokemonItem.classList.add('list-group-item', 'align-items-center');
+
+    pokemonItem.appendChild(button);
+    pokemonList.appendChild(pokemonItem);
   }
 
 // function that displays the fetched details on the console
