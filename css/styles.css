@@ -2,13 +2,12 @@
   background: linear-gradient(to bottom, blue, white);
 }
 .pokemon-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .pokemon-button {
   width: 250px;
-  background-color: transparent;
   text-transform: capitalize;
 }
 
@@ -115,22 +114,22 @@ h3 {
   text-align: center;
 }
 
+*/
+
 * {
   box-sizing: border-box;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .poke-grid {
-    max-width: 100%;
-    margin: 15px;
+  .pokemon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 500px) {
-  .poke-grid {
-    max-width: 100%;
-    margin: 15px;
+  .pokemon-list {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
-
-*/
