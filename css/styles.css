@@ -1,8 +1,7 @@
 /* font-family: 'Nunito Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
 
-
-
+/*
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
@@ -42,13 +41,9 @@ h3 {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 
-  /* to show it above other content */
+
   z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough */
   overflow: auto;
-
-  /* this is used to center the modal */
   display: grid;
   text-align: center;
 }
@@ -134,3 +129,5 @@ ul.pokemon-list {
     margin: 15px;
   }
 }
+
+*/
