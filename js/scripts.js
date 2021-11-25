@@ -69,7 +69,7 @@ validating that it's an object and has a name*/
     button.addEventListener('click', function() {
       showDetails(pokemon);
     });
-    pokemonItem.classList.add('list-group-item', 'align-items-center', 'border-0');
+    pokemonItem.classList.add('list-group-item', 'align-items-center');
 
     pokemonItem.appendChild(button);
     pokemonList.appendChild(pokemonItem);
