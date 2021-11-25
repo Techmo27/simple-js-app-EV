@@ -63,7 +63,7 @@ validating that it's an object and has a name*/
     button.setAttribute('data-target', '#exampleModal');
     button.setAttribute('data-toggle', 'modal');
 
-    button.addEventListener('click', function(event) {
+    button.addEventListener('click', function() {
       showDetails(pokemon);
     });
     pokemonItem.classList.add('list-group-item', 'align-items-center');
@@ -74,7 +74,7 @@ validating that it's an object and has a name*/
 
 // function that displays the fetched details on the console
   function showDetails(pokemon) {
-    loadDetails(pokemon).then(function () {
+    pokemonRepository.loadDetails(pokemon).then(function () {
       showModal(pokemon);
     });
   }
@@ -98,7 +98,7 @@ validating that it's an object and has a name*/
   //create element for Pokemon height
   let heightElement = $('<p>' + 'Height : ' + pokemon.height + 'm' + '</p>');
   //create element for Pokemon weight
-  let typesElement = $('<p>' + 'Types : ' + pokemon.types + 'Kg' +'</p>');
+  let typesElement = $('<p>' + 'Types : ' + pokemon.types + '</p>');
 	/* eslint-enable no-undef */
 
   modalTitle.append(nameElement);
