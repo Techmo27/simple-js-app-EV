@@ -83,6 +83,10 @@ validating that it's an object and has a name*/
   }
 
   // Modal function
+
+
+  /*global $*/
+  /*eslint no-undef: "error"*/
   function showModal(pokemon) {
 
 	let modalBody = $('.modal-body');
