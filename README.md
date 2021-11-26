@@ -1,14 +1,17 @@
 **Project description**
 
-*I am building a small Pokedex App using HTML, CSS, and JavaScript that loads
-data about Pokemon from an external API so that the user is able to view data points of those Pokemons in detail and on demand.*
+*Pokédex is a small application which allows the usesr to view a list of 150 Pokémons. 
+By clicking on the Pokémon name the user is able to view more details on demand.
 
+**Key Features**
+
+● Load data from an external API (https://www.pokemon.com/us/pokedex/)
+● View a list of Pokémons
+● On clicking, view details on modal pop-up
 
 **Project dependencies**
 
-* JavaScript version
+* JavaScript ES6 version
 * ESLint rules
-
-**API** 
-
-* Pokemon API
+* Bootstarp 5
+* jQuery
