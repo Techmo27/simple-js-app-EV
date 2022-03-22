@@ -1,6 +1,6 @@
 **Project description**
 
-*Pokédex is a small application which allows the usesr to view a list of 150 Pokémons. 
+Pokédex is a small application which allows the usesr to view a list of 150 Pokémons. 
 By clicking on the Pokémon name the user is able to view more details on demand.
 
 **Key Features**
